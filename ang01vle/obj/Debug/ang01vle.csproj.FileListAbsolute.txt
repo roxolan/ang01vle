@@ -1,0 +1,3 @@
+C:\Users\roxol_000\OneDrive\dev\sp\ang01vle\ang01vle\bin\Debug\ang01vle.pdb
+C:\Users\roxol_000\OneDrive\dev\sp\ang01vle\ang01vle\obj\Debug\ang01vle.dll
+C:\Users\roxol_000\OneDrive\dev\sp\ang01vle\ang01vle\obj\Debug\ang01vle.pdb
