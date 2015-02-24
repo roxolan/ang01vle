@@ -3,4 +3,14 @@
   <PropertyGroup>
     <SharePointSiteUrl>https://kmbsua.sharepoint.com/sites/codev/</SharePointSiteUrl>
   </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <ProjectStore>
+          <AppInstancePackageModifiedTime>2015-02-23T14:23:06.0419555Z</AppInstancePackageModifiedTime>
+          <AppInstanceId>81a2fa65-22b6-4641-ad6a-82597b382126</AppInstanceId>
+        </ProjectStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
