@@ -3,6 +3,7 @@
   <ElementManifests>
     <ElementManifest Location="Pages\Elements.xml" />
     <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\app.html" />
     <ElementManifest Location="Scripts\Elements.xml" />
     <ElementFile Location="Scripts\App.js" />
     <ElementFile Location="Scripts\jquery-1.9.1.min.map" />

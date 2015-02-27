@@ -8,12 +8,10 @@
 >
   <Properties>
     <Title>ang01vle</Title>
-    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <StartPage>~appWebUrl/Pages/app.html?{StandardTokens}</StartPage>
   </Properties>
 
   <AppPrincipal>
     <Internal />
   </AppPrincipal>
-
-
 </App>
