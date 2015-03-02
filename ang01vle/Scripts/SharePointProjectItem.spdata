@@ -17,5 +17,8 @@
     <ProjectItemFile Source="angular-sanitize.min.js.map" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="angular-sanitize.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="angular-sanitize.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-cookies.min.js.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-cookies.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-cookies.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

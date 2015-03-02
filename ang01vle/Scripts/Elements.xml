@@ -16,5 +16,8 @@
     <File Path="Scripts\angular-sanitize.min.js.map" Url="Scripts/angular-sanitize.min.js.map" ReplaceContent="TRUE" />
     <File Path="Scripts\angular-sanitize.min.js" Url="Scripts/angular-sanitize.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\angular-sanitize.js" Url="Scripts/angular-sanitize.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-cookies.min.js.map" Url="Scripts/angular-cookies.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-cookies.min.js" Url="Scripts/angular-cookies.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-cookies.js" Url="Scripts/angular-cookies.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

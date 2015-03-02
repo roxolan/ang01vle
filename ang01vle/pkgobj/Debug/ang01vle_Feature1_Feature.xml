@@ -20,6 +20,9 @@
     <ElementFile Location="Scripts\angular-sanitize.min.js.map" />
     <ElementFile Location="Scripts\angular-sanitize.min.js" />
     <ElementFile Location="Scripts\angular-sanitize.js" />
+    <ElementFile Location="Scripts\angular-cookies.min.js.map" />
+    <ElementFile Location="Scripts\angular-cookies.min.js" />
+    <ElementFile Location="Scripts\angular-cookies.js" />
     <ElementManifest Location="Content\Elements.xml" />
     <ElementFile Location="Content\App.css" />
     <ElementManifest Location="Images\Elements.xml" />
