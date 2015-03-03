@@ -4,9 +4,9 @@
     // create the app
     var app = angular.module('app', [
       // ootb angular modules
-      'ngRoute',      // app route (url path) support
-      'ngSanitize'  // fixes HTML issues in data binding
-      //'ngCookies',   // cookie read/write support
+      'ngRoute'     // app route (url path) support
+      , 'ngSanitize'  // fixes HTML issues in data binding
+      , 'ngCookies'   // cookie read/write support
       // my custom modules
       //'common'
     ]);
