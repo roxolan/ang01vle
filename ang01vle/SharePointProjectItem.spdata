@@ -4,5 +4,10 @@
     <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
     <ProjectItemFile Source="App\app.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="App\util\jquery-extensions.js" Target="App\util\" Type="ElementFile" />
+    <ProjectItemFile Source="App\config.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="App\appLauncher.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="App\common\common.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="App\common\logger.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="App\services\spContext.js" Target="App\services\" Type="ElementFile" />
   </Files>
 </ProjectItem>

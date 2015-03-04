@@ -3,5 +3,10 @@
   <Module Name="RootModule">
     <File Path="App\app.js" Url="App/app.js" ReplaceContent="TRUE" />
     <File Path="App\util\jquery-extensions.js" Url="App/util/jquery-extensions.js" ReplaceContent="TRUE" />
+    <File Path="App\config.js" Url="App/config.js" ReplaceContent="TRUE" />
+    <File Path="App\appLauncher.js" Url="App/appLauncher.js" ReplaceContent="TRUE" />
+    <File Path="App\common\common.js" Url="App/common/common.js" ReplaceContent="TRUE" />
+    <File Path="App\common\logger.js" Url="App/common/logger.js" ReplaceContent="TRUE" />
+    <File Path="App\services\spContext.js" Url="App/services/spContext.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

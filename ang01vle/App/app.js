@@ -8,11 +8,11 @@
       , 'ngSanitize'  // fixes HTML issues in data binding
       , 'ngCookies'   // cookie read/write support
       // my custom modules
-      //'common'
+      , 'common'
     ]);
 
     // wire up routing for errors & success events
-    //app.run(['$route', function ($route) {
+    app.run(['$route', function ($route) {
         // run any code that needs to execute prior to the app actually starting up
-    //}]);
+    }]);
 })();

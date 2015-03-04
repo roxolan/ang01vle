@@ -3,12 +3,12 @@
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="ang01vle"
      ProductID="{41064789-892b-47fb-a0d5-9b0b6f789787}"
-     Version="1.0.0.1"
+     Version="1.0.0.2"
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>ang01vle</Title>
-    <StartPage>~appWebUrl/Pages/app.html?{StandardTokens}</StartPage>
+    <StartPage>~appWebUrl/appLauncher.html?{StandardTokens}&amp;SPHostTitle={HostTitle}&amp;SPHostLogoUrl={HostLogoUrl}</StartPage>
   </Properties>
 
   <AppPrincipal>
