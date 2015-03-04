@@ -9,5 +9,7 @@
     <ProjectItemFile Source="App\common\common.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="App\common\logger.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="App\services\spContext.js" Target="App\services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\spAppChrome.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\spAppChrome.js" Target="App\layout\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -8,5 +8,7 @@
     <File Path="App\common\common.js" Url="App/common/common.js" ReplaceContent="TRUE" />
     <File Path="App\common\logger.js" Url="App/common/logger.js" ReplaceContent="TRUE" />
     <File Path="App\services\spContext.js" Url="App/services/spContext.js" ReplaceContent="TRUE" />
+    <File Path="App\layout\spAppChrome.html" Url="App/layout/spAppChrome.html" ReplaceContent="TRUE" />
+    <File Path="App\layout\spAppChrome.js" Url="App/layout/spAppChrome.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
