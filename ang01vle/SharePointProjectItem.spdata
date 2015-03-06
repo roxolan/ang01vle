@@ -11,5 +11,17 @@
     <ProjectItemFile Source="App\services\spContext.js" Target="App\services\" Type="ElementFile" />
     <ProjectItemFile Source="App\layout\spAppChrome.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="App\layout\spAppChrome.js" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\header.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\header.js" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\config.route.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dashboard\dashboard.html" Target="App\dashboard\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dashboard\dashboard.js" Target="App\dashboard\" Type="ElementFile" />
+    <ProjectItemFile Source="App\config.exceptionHandler.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\shell.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\shell.js" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\quicklaunch.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\quicklaunch.js" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\workingonit.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\layout\workingonit.js" Target="App\layout\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    var app = angular.module('app');
+            var app = angular.module('app');
 
     // all events that could be monitored in app
     var events = {
