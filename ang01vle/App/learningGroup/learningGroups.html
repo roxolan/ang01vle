@@ -1,0 +1,32 @@
+﻿﻿<div data-ng-controller="learningGroups as vm">
+    <table border="0" cellspacing="0" cellpadding="1" class="ms-listviewtable">
+        <thead>
+            <tr valign="top" class="ms-viewheadertr ms-vhltr">
+                <th scope="col" style="max-width: 500px" class="ms-vh2">
+                    <div displayname="Title" class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Title</a>
+                    </div>
+                </th>
+                <th scope="col" style="max-width: 500px" class="ms-vh2">
+                    <div displayname="_Comments" class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Comments</a>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="ms-itmHoverEnabled ms-itmhover"
+                data-ng-repeat="lg in vm.learningGroups"
+                data-ng-click="vm.goToItem(lg)">
+                <td class="ms-cellstyle ms-vb-title ms-positionRelative" height="100%">
+                    <div class="ms-vb  ms-vb-menuPadding itx">
+                        <a class="ms-listlink" target="_self">{{lg.Title}}</a>
+                    </div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{lg.OData__Comments}}</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

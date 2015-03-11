@@ -22,5 +22,13 @@
     <File Path="App\layout\quicklaunch.js" Url="App/layout/quicklaunch.js" ReplaceContent="TRUE" />
     <File Path="App\layout\workingonit.html" Url="App/layout/workingonit.html" ReplaceContent="TRUE" />
     <File Path="App\layout\workingonit.js" Url="App/layout/workingonit.js" ReplaceContent="TRUE" />
+    <File Path="App\learningGroup\learningGroups.html" Url="App/learningGroup/learningGroups.html" ReplaceContent="TRUE" />
+    <File Path="App\learningGroup\learningGroups.js" Url="App/learningGroup/learningGroups.js" ReplaceContent="TRUE" />
+    <File Path="App\learningGroup\learningGroupDetail.html" Url="App/learningGroup/learningGroupDetail.html" ReplaceContent="TRUE" />
+    <File Path="App\learningGroup\learningGroupDetail.js" Url="App/learningGroup/learningGroupDetail.js" ReplaceContent="TRUE" />
+    <File Path="App\course\courses.html" Url="App/course/courses.html" ReplaceContent="TRUE" />
+    <File Path="App\course\courses.js" Url="App/course/courses.js" ReplaceContent="TRUE" />
+    <File Path="App\course\courseDetail.html" Url="App/course/courseDetail.html" ReplaceContent="TRUE" />
+    <File Path="App\course\courseDetail.js" Url="App/course/courseDetail.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

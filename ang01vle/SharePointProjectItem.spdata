@@ -23,5 +23,13 @@
     <ProjectItemFile Source="App\layout\quicklaunch.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="App\layout\workingonit.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="App\layout\workingonit.js" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="App\learningGroup\learningGroups.html" Target="App\learningGroup\" Type="ElementFile" />
+    <ProjectItemFile Source="App\learningGroup\learningGroups.js" Target="App\learningGroup\" Type="ElementFile" />
+    <ProjectItemFile Source="App\learningGroup\learningGroupDetail.html" Target="App\learningGroup\" Type="ElementFile" />
+    <ProjectItemFile Source="App\learningGroup\learningGroupDetail.js" Target="App\learningGroup\" Type="ElementFile" />
+    <ProjectItemFile Source="App\course\courses.html" Target="App\course\" Type="ElementFile" />
+    <ProjectItemFile Source="App\course\courses.js" Target="App\course\" Type="ElementFile" />
+    <ProjectItemFile Source="App\course\courseDetail.html" Target="App\course\" Type="ElementFile" />
+    <ProjectItemFile Source="App\course\courseDetail.js" Target="App\course\" Type="ElementFile" />
   </Files>
 </ProjectItem>
