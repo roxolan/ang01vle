@@ -41,7 +41,7 @@
                     title: 'learning groups',
                     settings: {
                         nav: 1,
-                        content: 'learning groups',
+                        content: 'навчальні групи',
                         quickLaunchEnabled: true
                     }
                 }
@@ -61,11 +61,11 @@
             {
                 url: '/Courses',
                 config: {
-                    templateUrl: 'App/Course/courses.html',
-                    title: 'курси',
+                    templateUrl: 'App/course/courses.html',
+                    title: 'courses',
                     settings: {
-                        nav: 2,
-                        content: 'courses',
+                        nav: 0.5,
+                        content: 'курси',
                         quickLaunchEnabled: true
                     }
                 }
@@ -73,7 +73,7 @@
             {
                 url: '/Courses/:id',
                 config: {
-                    templateUrl: 'App/Course/courseDetail.html',
+                    templateUrl: 'App/course/courseDetail.html',
                     title: 'course',
                     settings: {
                         nav: 2.1,

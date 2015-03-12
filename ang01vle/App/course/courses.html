@@ -21,16 +21,16 @@
         </thead>
         <tbody>
             <tr class="ms-itmHoverEnabled ms-itmhover"
-                data-ng-repeat="course in vm.courses"
-                data-ng-click="vm.goToCourse(course)">
+                data-ng-repeat="cs in vm.courses"
+                data-ng-click="vm.goToCourse(cs)">
                 <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
-                    <div class="ms-rtestate-field">{{course.Title}}</div>
+                    <div class="ms-rtestate-field">{{cs.Title}}</div>
                 </td>
                 <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
-                    <div class="ms-rtestate-field">{{course.LearningGroupId}}</div>
+                    <div class="ms-rtestate-field">{{cs.LearningGroupId}}</div>
                 </td>
                 <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
-                    <div class="ms-rtestate-field">{{course.DetailLink.Url}}</div>
+                    <div class="ms-rtestate-field">{{cs.DetailLink.Url}}</div>
                 </td>
             </tr>
         </tbody>

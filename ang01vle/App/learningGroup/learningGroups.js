@@ -13,6 +13,7 @@
 
         // collection of items
         vm.learningGroups = dummyLearningGroups;
+
         // navigate to specified item
         vm.goToItem = goToItem;
 

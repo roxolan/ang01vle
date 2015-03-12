@@ -9,10 +9,14 @@
     // create controller
     function courses($location, common) {
         var vm = this;
+        var logger = common.logger;
+
+        // collection of items
+        vm.courses = dummyCourses;
 
         // navigate to the specified item
         vm.goToCourse = goToCourse;
-        vm.courses = dummyCourseList;
+
 
         // init controller
         init();
@@ -31,13 +35,13 @@
         }
     };
 
-    var dummyCourseList = [
+    var dummyCourses = [
         {
             "__metadata": {
                 "id": "c89cc066-5554-4b2a-af57-83b8f03eb3d3",
                 "uri": "http://foo.local/lpm/_api/Web/Lists(guid'576f5d5d-239c-4e9e-ada9-c040f4852dfb')/Items(1)",
                 "etag": "\"1\"",
-                "type": "SP.CoursesListItem"
+                "type": "SP.Data.CoursesListItem"
             },
             "FirstUniqueAncestorSecurableObject": {
                 "__deferred": {
@@ -116,7 +120,7 @@
                 "id": "c89cc066-5554-4b2a-af57-83b8f03eb3d3",
                 "uri": "http://foo.local/lpm/_api/Web/Lists(guid'576f5d5d-239c-4e9e-ada9-c040f4852dfb')/Items(1)",
                 "etag": "\"1\"",
-                "type": "SP.CoursesListItem"
+                "type": "SP.Data.CoursesListItem"
             },
             "FirstUniqueAncestorSecurableObject": {
                 "__deferred": {
@@ -191,4 +195,4 @@
             "GUID": "c8e6ca37-bc3a-4c6c-ba21-5c2bec9825dd"
         }
     ];
-})
+})();

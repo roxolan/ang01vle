@@ -22,7 +22,7 @@
         }
 
         // #region private members
-        // load all navigatino routes
+        // load all navigating routes
         function getNavigationRoutes() {
             // only retrieve routes flagged quickLaunchEnabled = true & sort them
             vm.navRoutes = routes.filter(function (route) {
