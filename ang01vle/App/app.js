@@ -12,7 +12,7 @@
     ]);
 
     // wire up routing for errors & success events
-    app.run(['$route', function ($route) {
+    app.run(['$route', 'angular.config', function ($route, angularConfig) {
         // run any code that needs to execute prior to the app actually starting up
     }]);
 })();
