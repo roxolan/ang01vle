@@ -31,5 +31,9 @@
     <ProjectItemFile Source="App\course\courses.js" Target="App\course\" Type="ElementFile" />
     <ProjectItemFile Source="App\course\courseDetail.html" Target="App\course\" Type="ElementFile" />
     <ProjectItemFile Source="App\course\courseDetail.js" Target="App\course\" Type="ElementFile" />
+    <ProjectItemFile Source="App\models\learningGroup.js" Target="App\models\" Type="ElementFile" />
+    <ProjectItemFile Source="App\models\course.js" Target="App\models\" Type="ElementFile" />
+    <ProjectItemFile Source="App\services\datacontext.angular.js" Target="App\services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\config.angular.http.js" Target="App\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -30,5 +30,9 @@
     <File Path="App\course\courses.js" Url="App/course/courses.js" ReplaceContent="TRUE" />
     <File Path="App\course\courseDetail.html" Url="App/course/courseDetail.html" ReplaceContent="TRUE" />
     <File Path="App\course\courseDetail.js" Url="App/course/courseDetail.js" ReplaceContent="TRUE" />
+    <File Path="App\models\learningGroup.js" Url="App/models/learningGroup.js" ReplaceContent="TRUE" />
+    <File Path="App\models\course.js" Url="App/models/course.js" ReplaceContent="TRUE" />
+    <File Path="App\services\datacontext.angular.js" Url="App/services/datacontext.angular.js" ReplaceContent="TRUE" />
+    <File Path="App\config.angular.http.js" Url="App/config.angular.http.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
