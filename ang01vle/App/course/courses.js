@@ -4,10 +4,10 @@
     // define controller
     var controllerId = "courses";
     angular.module('app').controller(controllerId,
-      ['$location', 'common', courses]);
+      ['$location', 'common', 'datacontext', courses]);
 
     // create controller
-    function courses($location, common) {
+    function courses($location, common, datacontext) {
         var vm = this;
         var logger = common.logger;
 

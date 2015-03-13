@@ -4,10 +4,10 @@
     // define controller
     var controllerId = "learningGroups";
     angular.module('app').controller(controllerId,
-      ['$location', 'common', learningGroups]);
+      ['$location', 'common', 'datacontext', learningGroups]);
 
     // create controller
-    function learningGroups($location, common) {
+    function learningGroups($location, common, datacontext) {
         var vm = this;
         var logger = common.logger;
 
