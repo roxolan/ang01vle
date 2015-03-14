@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Навчальні групи" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/LearningGroups" Description="Дані для навчальних груп">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">PMBA11</Field>
+          <Field Name="_Comments">Група Президентська MBA-11</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">PMBA10</Field>
+          <Field Name="_Comments">Група Президентська MBA-10</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">EMBA22</Field>
+          <Field Name="_Comments">Група Executive MBA-22</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">EMBA23</Field>
+          <Field Name="_Comments">Група Executive MBA-23</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">EMBA(A)-2</Field>
+          <Field Name="_Comments">Група Executive MBA(Агро)-2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">EMBA(A)-3</Field>
+          <Field Name="_Comments">Група Executive MBA(Агро)-3</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
