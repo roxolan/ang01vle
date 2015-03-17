@@ -7,10 +7,6 @@
     <ProjectItemFile Source="jquery-1.9.1.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-1.9.1.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-1.9.1.intellisense.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="angular-mocks.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="angular.min.js.map" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="angular.min.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="angular.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="angular-route.min.js.map" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="angular-route.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="angular-route.js" Target="Scripts\" Type="ElementFile" />
@@ -27,5 +23,12 @@
     <ProjectItemFile Source="moment-with-locales.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="moment.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="moment.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-mocks.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.min.js.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-resource.min.js.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-resource.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-resource.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

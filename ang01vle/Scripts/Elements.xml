@@ -6,10 +6,6 @@
     <File Path="Scripts\jquery-1.9.1.min.js" Url="Scripts/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-1.9.1.js" Url="Scripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
-    <File Path="Scripts\angular-mocks.js" Url="Scripts/angular-mocks.js" ReplaceContent="TRUE" />
-    <File Path="Scripts\angular.min.js.map" Url="Scripts/angular.min.js.map" ReplaceContent="TRUE" />
-    <File Path="Scripts\angular.min.js" Url="Scripts/angular.min.js" ReplaceContent="TRUE" />
-    <File Path="Scripts\angular.js" Url="Scripts/angular.js" ReplaceContent="TRUE" />
     <File Path="Scripts\angular-route.min.js.map" Url="Scripts/angular-route.min.js.map" ReplaceContent="TRUE" />
     <File Path="Scripts\angular-route.min.js" Url="Scripts/angular-route.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\angular-route.js" Url="Scripts/angular-route.js" ReplaceContent="TRUE" />
@@ -26,5 +22,12 @@
     <File Path="Scripts\moment-with-locales.js" Url="Scripts/moment-with-locales.js" ReplaceContent="TRUE" />
     <File Path="Scripts\moment.min.js" Url="Scripts/moment.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\moment.js" Url="Scripts/moment.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-mocks.js" Url="Scripts/angular-mocks.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular.min.js.map" Url="Scripts/angular.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular.min.js" Url="Scripts/angular.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular.js" Url="Scripts/angular.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-resource.min.js.map" Url="Scripts/angular-resource.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-resource.min.js" Url="Scripts/angular-resource.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-resource.js" Url="Scripts/angular-resource.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
