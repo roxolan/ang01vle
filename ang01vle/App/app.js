@@ -6,6 +6,7 @@
       // ootb angular modules
       'ngRoute'     // app route (url path) support
       , 'ngSanitize'  // fixes HTML issues in data binding
+      , 'ngResource'   // assists with rest calls
       , 'ngCookies'   // cookie read/write support
       // my custom modules
       , 'common'

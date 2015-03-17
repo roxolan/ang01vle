@@ -2,7 +2,7 @@
     'use strict';
 
     // create app
-    var app = angular.module('app', ['common', 'ngCookies']);
+    var app = angular.module('app', ['common', 'ngResource', 'ngCookies']);
 
     // configure angular logging service before startup
     app.config(['$logProvider', function ($logProvider) {

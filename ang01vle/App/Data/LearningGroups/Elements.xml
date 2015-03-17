@@ -8,7 +8,7 @@
         OnQuickLaunch="TRUE"
         SecurityBits="11"
         Sequence="410"
-        DisplayName="LearningGroups"
+        DisplayName="Learning Groups"
         Description="My List Definition"
         Image="/_layouts/15/images/itgen.png"/>
 </Elements>
