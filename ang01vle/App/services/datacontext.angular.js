@@ -3,21 +3,42 @@
 
     var serviceId = 'datacontext';
     angular.module('app').factory(serviceId,
-        ['$rootScope', '$http', '$q', 'config', 'common', 'spContext', datacontext]);
+        ['$rootScope', '$http', '$resource', '$q', 'config', 'common', 'spContext', datacontext]);
 
-    function datacontext($rootScope, $http, $q, config, common, spContext) {
+    function datacontext($rootScope, $http, $resource, $q, config, common, spContext) {
 
         init()
 
         // service public signature
         return {
             // learning group members:
-            getLearningGroupsPartials: getLearningGroupsPartials
+            getLearningGroupsPartials: getLearningGroupsPartials,
+            getLearningGroup: getLearningGroup
 
         }
 
         function init() {
             common.logger.log("service loaded", null, serviceId);
+            common.logger.log("the value of $ is: " + $q, null, serviceId);
+        }
+
+        // get the Learning Group angular resource reference
+        function getLgResource(currentItem) {
+            if (+currentItem.Id) {
+                return $resource('_api/web/lists/getbytitle(\'Навчальні групи\')/items(:itemId)',
+                { itemId: currentItem.Id },
+                {
+                    get: {
+                        method: 'GET',
+                        params: {
+                            '$select': 'Id,Title,OData__Comments,Created,Modified'
+                        },
+                        headers: {
+                            'Accept': 'application/json;odata=verbose;'
+                        }
+                    }
+                });
+            }
         }
 
         function getLearningGroupsPartials() {
@@ -39,6 +60,29 @@
 
             return deferred.promise;
         }
-    }
 
+        // gets a specific learning group
+        function getLearningGroup(id) {
+            var lg = new vle.models.learningGroup();
+            lg.Id = id;
+
+            // get resource
+            var resource = getLgResource(lg);
+            common.logger.log("resource is undefined?", getLgResource(lg), serviceId);
+
+            var deferred = $q.defer();
+            resource.get({}, function (data) {
+                // success callback
+                deferred.resolve(data.d);
+                common.logger.log("retrieved learning group", data, serviceId);
+            }, function (error) {
+                // failure callback
+                deferred.reject(error);
+                common.logger.logError("retrieve learning group", error, serviceId);
+            });
+
+            return deferred.promise;
+
+        }
+    }
 })();

@@ -8,7 +8,7 @@ vle.models.learningGroup = function () {
     this.Title = undefined;
     this.OData__Comments = undefined;
     this.__metadata = {
-        type: 'SP.Data.LearningGroupListItem'
+        type: 'SP.Data.LearningGroupsItem'
     };
 };
 
