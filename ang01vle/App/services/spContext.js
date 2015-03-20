@@ -5,9 +5,9 @@
     var serviceId = 'spContext';
     var loggerSource = '[' + serviceId + '] ';
     angular.module('app').service(serviceId, [
-      '$log', '$cookieStore', '$window', '$location', spContext]);
+      '$log', '$cookieStore', '$window', '$location', '$resource', '$timeout', 'common', spContext]);
 
-    function spContext($log, $cookieStore, $window, $location) {
+    function spContext($log, $cookieStore, $window, $location, $resource, $timeout, common) {
         var service = this;
         var spWeb = {
             appWebUrl: '',
@@ -27,6 +27,10 @@
             if (decodeURIComponent(jQuery.getQueryStringValue("SPHostUrl")) === "undefined") {
                 // load the app context form the cookie
                 loadSpAppContext();
+
+                // fire off auto refresh of digest
+                refreshSecurityValidation();
+
             } else {
                 // otherwise, create the app context & the cookie
                 createSpAppContext();
@@ -61,6 +65,39 @@
             service.hostWeb.url = $cookieStore.get('SPHostUrl');
             service.hostWeb.title = $cookieStore.get('SPHostTitle');
             service.hostWeb.logoUrl = $cookieStore.get('SPHostLogoUrl');
+        }
+
+        function refreshSecurityValidation() {
+            common.logger.log('refreshing security validation', service.securityValidation, serviceId);
+
+            var siteContextInfoResource = $resource('_api/contextinfo', {}, {
+                post: {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json;odata=verbose',
+                        'Content-Type': 'application/json;odata=verbose'
+                    }
+                }
+            });
+
+            // request validation
+            siteContextInfoResource.post({},
+                // While it's still an HTTP POST, no data is submitted to SharePoint
+                function (data) {
+                    // success callback
+
+                    // obtain security digest timeout & value & store in service
+                    var validationRefreshTimeout = data.d.GetContextWebInformation.FormDigestTimeoutSeconds - 10;
+                    service.securityValidation = data.d.GetContextWebInformation.FormDigestValue;
+                    common.logger.log('refreshed security validation', service.securityValidation, serviceId);
+                    common.logger.log('next refresh of security validation: ' + validationRefreshTimeout + " seconds", null, serviceId);
+
+                    $timeout(function () {
+                        refreshSecurityValidation();
+                    }, validationRefreshTimeout * 1000);
+                }, function(error) {
+                    common.log.logError('response from contextinfo', error, serviceId);
+                });
         }
     }
 })();
