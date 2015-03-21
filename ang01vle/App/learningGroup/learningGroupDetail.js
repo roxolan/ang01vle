@@ -83,6 +83,11 @@
         });
     }
 
+    // create a new learning path item
+    function createItem() {
+      vm.learningGroup = datacontext.createLearningGroup();
+    }
+
     // load the item specified in the route
     function getItemDetail(learningGroupId) {
       datacontext.getLearningGroup(learningGroupId)

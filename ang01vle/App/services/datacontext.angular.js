@@ -14,9 +14,9 @@
       // learning group members:
       getLearningGroupsPartials: getLearningGroupsPartials,
       getLearningGroup: getLearningGroup,
+      createLearningGroup: createLearningGroup,
       saveLearningGroup: saveLearningGroup,
       deleteLearningGroup: deleteLearningGroup
-
     }
 
     function init() {
@@ -58,6 +58,19 @@
             }
           }
         });
+      } else {
+        return $resource('_api/web/lists/getbytitle(\'Навчальні групи\')/items',
+        {},
+        {
+          post: {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json;odata=verbose;',
+              'Content-Type': 'application/json;odata=verbose;',
+              'X-RequestDigest': spContext.securityValidation
+            }
+          }
+        });
       }
     }
 
@@ -81,7 +94,7 @@
       return deferred.promise;
     }
 
-      // gets a specific learning group
+    // gets a specific learning group
     function getLearningGroup(id) {
       var lg = new vle.models.learningGroup();
       lg.Id = id;
@@ -101,6 +114,11 @@
       });
 
       return deferred.promise;
+    }
+
+    // creates a new learning group
+    function createLearningGroup() {
+      return new vle.models.learningGroup();
     }
 
     function saveLearningGroup(learningGroup) {
