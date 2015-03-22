@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Перелік курсів"
-                OnQuickLaunch="TRUE"
-                TemplateType="100"
-                Url="Lists/Courses"
-                Description="Список курсів">
+  <ListInstance Title="Courses" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/Courses" Description="Список курсів">
     <Data>
       <Rows>
         <Row>

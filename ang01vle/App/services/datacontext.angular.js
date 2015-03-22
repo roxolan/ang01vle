@@ -16,7 +16,10 @@
       getLearningGroup: getLearningGroup,
       createLearningGroup: createLearningGroup,
       saveLearningGroup: saveLearningGroup,
-      deleteLearningGroup: deleteLearningGroup
+      deleteLearningGroup: deleteLearningGroup,
+      // course members
+      getCoursesPartials: getCoursesPartials
+      /// 
     }
 
     function init() {
@@ -52,7 +55,7 @@
             method: 'DELETE',
             headers: {
               'Accept': 'application/json;odata=verbose;',
-              'Content-Type': 'application/json;odata=verbose',
+              'Content-Type': 'application/json;odata=verbose;',
               'X-RequestDigest': spContext.securityValidation,
               'If-Match': '*'
             }
@@ -71,6 +74,96 @@
             }
           }
         });
+      }
+    }
+
+    // get the Course angular resource reference
+    function getCourseResource(currentCourse, learningGroupIdFilter) {
+      // if a course is passed in...
+      if (currentCourse) {
+        // THEN if the course has an ID
+        if (+currentCourse.Id) {
+          // THEN get the specific course
+          return $resource('_api/web/lists/getbytitle(\'Courses\')/items(:courseId)',
+          { courseId: currentCourse.Id },
+          {
+            get: {
+              method: 'GET',
+              params: {
+                '$select': 'Id,Title,LearningGroup/Id,DetailLink,Description,Created,Modified',
+                '$expand': 'LearningGroup/Id'
+              },
+              headers: {
+                'Accept': 'application/json;odata=verbose;'
+              }
+            },
+            post: {
+              method: 'POST',
+              headers: {
+                'Accept': 'application/json;odata=verbose;',
+                'Content-Type': 'application/json;odata=verbose;',
+                'X-RequestDigest': spContext.securityValidation,
+                'X-HTTP-Method': 'MERGE',
+                'If-Match': currentItem.__metadata.etag
+              }
+            },
+            delete: {
+              method: 'DELETE',
+              headers: {
+                'Accept': 'application/json;odata=verbose;',
+                'Content-Type': 'application/json;odata=verbose;',
+                'X-RequestDigest': spContext.securityValidation,
+                'If-Match': '*'
+              }
+            }
+          });
+        } else {
+          // ELSE creating a course...
+          return $resource('_api/web/lists/getbytitle(\'Courses\')/items',
+            {},
+            {
+              post: {
+                method: 'POST',
+                headers: {
+                  'Accept': 'application/json;odata=verbose;',
+                  'Content-Type': 'application/json;odata=verbose;',
+                  'X-RequestDigest': spContext.securityValidation
+                }
+              }
+            });
+        }
+      } else {
+        // ELSE if a learning group ID filter is passed in,
+        if (learningGroupIdFilter) {
+          // THEN build the resource filtering for a specific learning group
+          // ELSE create resource showing all courses
+          return $resource('_api/web/lists/getbytitle(\'Courses\')/items',
+            {},
+            {
+              get: {
+                method: 'GET',
+                params: {
+                  '$select': 'LearningGroup/Id,Id,Title,DetailLink,Description,Created,Modified',
+                  '$expand': 'LearningGroup/Id',
+                  '$filter': 'LearningGroup/Id eq ' + learningGroupIdFilter
+                },
+                headers: {
+                  'Accept': 'application/json;odata=verbose;'
+                }
+              }
+            });
+        } else {
+          return $resource('_api/web/lists/getbytitle(\'Courses\')/items',
+          {},
+          {
+            get: {
+              method: 'GET',
+              headers: {
+                'Accept': 'application/json;odata=verbose;'
+              }
+            }
+          });
+        }
       }
     }
 
@@ -155,5 +248,22 @@
 
       return deferred.promise;
     }
+
+    function getCoursesPartials(learningGroupIdFilter) {
+      // get resource
+      var resource = getCourseResource(null, learningGroupIdFilter);
+
+      var deferred = $q.defer();
+      resource.get({}, function (data) {
+        deferred.resolve(data.d.results);
+        common.logger.log("retrieved courses partials", data, serviceId);
+      }, function (error) {
+        deferred.reject(error);
+        common.logger.logError("retrieved courses partials", error, serviceId);
+      });
+
+      return deferred.promise;
+    }
+
   }
 })();

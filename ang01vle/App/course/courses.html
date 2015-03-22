@@ -1,38 +1,52 @@
 ﻿﻿<div data-ng-controller="courses as vm">
-    <table border="0" cellspacing="0" cellpadding="1" class="ms-listviewtable">
-        <thead>
-            <tr valign="top" class="ms-viewheadertr ms-vhltr">
-                <th scope="col" style="max-width: 500px" class="ms-vh2">
-                    <div displayname="Title" class="ms-vh-div">
-                        <a class="ms-headerSortTitleLink">Title</a>
-                    </div>
-                </th>
-                <th scope="col" style="max-width: 500px" class="ms-vh2">
-                    <div displayname="Title" class="ms-vh-div">
-                        <a class="ms-headerSortTitleLink">Learning group</a>
-                    </div>
-                </th>
-                <th scope="col" style="max-width: 500px" class="ms-vh2">
-                    <div displayname="Title" class="ms-vh-div">
-                        <a class="ms-headerSortTitleLink">Link</a>
-                    </div>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="ms-itmHoverEnabled ms-itmhover"
-                data-ng-repeat="cs in vm.courses"
-                data-ng-click="vm.goToCourse(cs)">
-                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
-                    <div class="ms-rtestate-field">{{cs.Title}}</div>
-                </td>
-                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
-                    <div class="ms-rtestate-field">{{cs.LearningGroupId}}</div>
-                </td>
-                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
-                    <div class="ms-rtestate-field">{{cs.DetailLink.Url}}</div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  <table dir="none" cellpadding="0" cellspacing="0" border="0">
+    <tbody>
+      <tr>
+        <td class="ms-list-addnew ms-textXLarge ms-list-addnew-aligntop ms-soften">
+          <a href="{{vm.newCourseUrl()}}" class="ms-heroCommandLink">
+            <span class="ms-list-addnew-imgSpan20">
+              <img src="/_layouts/15/images/spcommon.png" class="ms-list-addnew-img20"/>
+            </span>
+            <span>новий курс</span>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellspacing="0" cellpadding="1" class="ms-listviewtable">
+    <thead>
+      <tr valign="top" class="ms-viewheadertr ms-vhltr">
+        <th scope="col" style="max-width: 500px" class="ms-vh2">
+          <div displayname="Title" class="ms-vh-div">
+            <a class="ms-headerSortTitleLink">Title</a>
+          </div>
+        </th>
+        <th scope="col" style="max-width: 500px" class="ms-vh2">
+          <div displayname="Title" class="ms-vh-div">
+            <a class="ms-headerSortTitleLink">Learning group</a>
+          </div>
+        </th>
+        <th scope="col" style="max-width: 500px" class="ms-vh2">
+          <div displayname="Title" class="ms-vh-div">
+            <a class="ms-headerSortTitleLink">Link</a>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="ms-itmHoverEnabled ms-itmhover"
+        data-ng-repeat="cs in vm.courses"
+        data-ng-click="vm.goToCourse(cs)">
+        <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+          <div class="ms-rtestate-field">{{cs.Title}}</div>
+        </td>
+        <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+          <div class="ms-rtestate-field">{{cs.LearningGroupId}}</div>
+        </td>
+        <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+          <div class="ms-rtestate-field">{{cs.DetailLink.Url}}</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
