@@ -35,5 +35,9 @@
     <ProjectItemFile Source="App\models\course.js" Target="App\models\" Type="ElementFile" />
     <ProjectItemFile Source="App\services\datacontext.angular.js" Target="App\services\" Type="ElementFile" />
     <ProjectItemFile Source="App\config.angular.http.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="analysis\XMLFile1.xml" Target="analysis\" Type="ElementFile" />
+    <ProjectItemFile Source="analysis\XMLFile2.xml" Target="analysis\" Type="ElementFile" />
+    <ProjectItemFile Source="analysis\XMLFile3.xml" Target="analysis\" Type="ElementFile" />
+    <ProjectItemFile Source="analysis\XMLFile4.xml" Target="analysis\" Type="ElementFile" />
   </Files>
 </ProjectItem>

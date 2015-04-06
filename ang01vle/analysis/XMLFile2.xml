@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entry xml:base="https://kmbsua-90d9db8dca525d.sharepoint.com/sites/dev/vle/_api/" xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml" m:etag="&quot;1&quot;">
+  <id>5f38d8c4-f148-4668-8ba5-82166ca651f9</id>
+  <category term="SP.Data.CoursesListItem" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+  <link rel="edit" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FirstUniqueAncestorSecurableObject" type="application/atom+xml;type=entry" title="FirstUniqueAncestorSecurableObject" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/FirstUniqueAncestorSecurableObject" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/RoleAssignments" type="application/atom+xml;type=feed" title="RoleAssignments" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/RoleAssignments" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/AttachmentFiles" type="application/atom+xml;type=feed" title="AttachmentFiles" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/AttachmentFiles" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ContentType" type="application/atom+xml;type=entry" title="ContentType" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/ContentType" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/GetDlpPolicyTip" type="application/atom+xml;type=entry" title="GetDlpPolicyTip" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/GetDlpPolicyTip" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FieldValuesAsHtml" type="application/atom+xml;type=entry" title="FieldValuesAsHtml" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/FieldValuesAsHtml" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FieldValuesAsText" type="application/atom+xml;type=entry" title="FieldValuesAsText" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/FieldValuesAsText" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FieldValuesForEdit" type="application/atom+xml;type=entry" title="FieldValuesForEdit" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/FieldValuesForEdit" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/File" type="application/atom+xml;type=entry" title="File" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/File" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Folder" type="application/atom+xml;type=entry" title="Folder" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/Folder" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ParentList" type="application/atom+xml;type=entry" title="ParentList" href="Web/Lists(guid'00072b0f-29d5-4179-875f-ec5fd5540669')/Items(1)/ParentList" />
+  <title />
+  <updated>2015-04-01T19:09:00Z</updated>
+  <author>
+    <name />
+  </author>
+  <content type="application/xml">
+    <m:properties>
+      <d:FileSystemObjectType m:type="Edm.Int32">0</d:FileSystemObjectType>
+      <d:Id m:type="Edm.Int32">1</d:Id>
+      <d:ContentTypeId>0x0100E03ED84A043F4603B23631F42EB3CFA1002CC6247F19073C4692CC1A9B2455CF7E</d:ContentTypeId>
+      <d:Title>Стратегічна ідея</d:Title>
+      <d:LearningGroupId m:type="Edm.Int32">1</d:LearningGroupId>
+      <d:OData__Description m:null="true" />
+      <d:ID m:type="Edm.Int32">1</d:ID>
+      <d:Modified m:type="Edm.DateTime">2015-04-01T19:00:05Z</d:Modified>
+      <d:Created m:type="Edm.DateTime">2015-04-01T19:00:05Z</d:Created>
+      <d:AuthorId m:type="Edm.Int32">1073741823</d:AuthorId>
+      <d:EditorId m:type="Edm.Int32">1073741823</d:EditorId>
+      <d:OData__UIVersionString>1.0</d:OData__UIVersionString>
+      <d:Attachments m:type="Edm.Boolean">false</d:Attachments>
+      <d:GUID m:type="Edm.Guid">0ef13feb-b208-4a1d-9520-f299aa03a585</d:GUID>
+    </m:properties>
+  </content>
+</entry> 

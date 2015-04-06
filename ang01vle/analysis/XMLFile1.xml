@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entry xml:base="https://kmbsua-382a7971137fc8.sharepoint.com/sites/codev/vle2/_api/" xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml" m:etag="&quot;0&quot;">
+  <id>https://kmbsua-382a7971137fc8.sharepoint.com/sites/codev/vle2/_api/Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')</id>
+  <category term="SP.List" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+  <link rel="edit" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FirstUniqueAncestorSecurableObject" type="application/atom+xml;type=entry" title="FirstUniqueAncestorSecurableObject" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/FirstUniqueAncestorSecurableObject" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/RoleAssignments" type="application/atom+xml;type=feed" title="RoleAssignments" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/RoleAssignments" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ContentTypes" type="application/atom+xml;type=feed" title="ContentTypes" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/ContentTypes" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/CreatablesInfo" type="application/atom+xml;type=entry" title="CreatablesInfo" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/CreatablesInfo" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DefaultView" type="application/atom+xml;type=entry" title="DefaultView" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/DefaultView" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DescriptionResource" type="application/atom+xml;type=entry" title="DescriptionResource" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/DescriptionResource" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/EventReceivers" type="application/atom+xml;type=feed" title="EventReceivers" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/EventReceivers" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Fields" type="application/atom+xml;type=feed" title="Fields" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/Fields" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Forms" type="application/atom+xml;type=feed" title="Forms" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/Forms" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/InformationRightsManagementSettings" type="application/atom+xml;type=entry" title="InformationRightsManagementSettings" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/InformationRightsManagementSettings" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Items" type="application/atom+xml;type=feed" title="Items" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/Items" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ParentWeb" type="application/atom+xml;type=entry" title="ParentWeb" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/ParentWeb" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/RootFolder" type="application/atom+xml;type=entry" title="RootFolder" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/RootFolder" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/TitleResource" type="application/atom+xml;type=entry" title="TitleResource" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/TitleResource" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/UserCustomActions" type="application/atom+xml;type=feed" title="UserCustomActions" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/UserCustomActions" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Views" type="application/atom+xml;type=feed" title="Views" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/Views" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/WorkflowAssociations" type="application/atom+xml;type=feed" title="WorkflowAssociations" href="Web/Lists(guid'dc61a4fe-1479-4029-bd1c-6147a636b9c3')/WorkflowAssociations" />
+  <title />
+  <updated>2015-04-01T14:16:18Z</updated>
+  <author>
+    <name />
+  </author>
+  <content type="application/xml">
+    <m:properties>
+      <d:AllowContentTypes m:type="Edm.Boolean">true</d:AllowContentTypes>
+      <d:BaseTemplate m:type="Edm.Int32">100</d:BaseTemplate>
+      <d:BaseType m:type="Edm.Int32">0</d:BaseType>
+      <d:ContentTypesEnabled m:type="Edm.Boolean">false</d:ContentTypesEnabled>
+      <d:CrawlNonDefaultViews m:type="Edm.Boolean">false</d:CrawlNonDefaultViews>
+      <d:Created m:type="Edm.DateTime">2015-04-01T11:09:46Z</d:Created>
+      <d:DefaultContentApprovalWorkflowId m:type="Edm.Guid">00000000-0000-0000-0000-000000000000</d:DefaultContentApprovalWorkflowId>
+      <d:Description>Список курсів</d:Description>
+      <d:Direction>none</d:Direction>
+      <d:DocumentTemplateUrl m:null="true" />
+      <d:DraftVersionVisibility m:type="Edm.Int32">0</d:DraftVersionVisibility>
+      <d:EnableAttachments m:type="Edm.Boolean">true</d:EnableAttachments>
+      <d:EnableFolderCreation m:type="Edm.Boolean">false</d:EnableFolderCreation>
+      <d:EnableMinorVersions m:type="Edm.Boolean">false</d:EnableMinorVersions>
+      <d:EnableModeration m:type="Edm.Boolean">false</d:EnableModeration>
+      <d:EnableVersioning m:type="Edm.Boolean">false</d:EnableVersioning>
+      <d:EntityTypeName>CoursesList</d:EntityTypeName>
+      <d:FileSavePostProcessingEnabled m:type="Edm.Boolean">false</d:FileSavePostProcessingEnabled>
+      <d:ForceCheckout m:type="Edm.Boolean">false</d:ForceCheckout>
+      <d:HasExternalDataSource m:type="Edm.Boolean">false</d:HasExternalDataSource>
+      <d:Hidden m:type="Edm.Boolean">false</d:Hidden>
+      <d:Id m:type="Edm.Guid">dc61a4fe-1479-4029-bd1c-6147a636b9c3</d:Id>
+      <d:ImageUrl>/_layouts/15/images/itgen.png</d:ImageUrl>
+      <d:IrmEnabled m:type="Edm.Boolean">false</d:IrmEnabled>
+      <d:IrmExpire m:type="Edm.Boolean">false</d:IrmExpire>
+      <d:IrmReject m:type="Edm.Boolean">false</d:IrmReject>
+      <d:IsApplicationList m:type="Edm.Boolean">false</d:IsApplicationList>
+      <d:IsCatalog m:type="Edm.Boolean">false</d:IsCatalog>
+      <d:IsPrivate m:type="Edm.Boolean">false</d:IsPrivate>
+      <d:ItemCount m:type="Edm.Int32">4</d:ItemCount>
+      <d:LastItemDeletedDate m:type="Edm.DateTime">2015-04-01T11:09:46Z</d:LastItemDeletedDate>
+      <d:LastItemModifiedDate m:type="Edm.DateTime">2015-04-01T11:26:29Z</d:LastItemModifiedDate>
+      <d:ListItemEntityTypeFullName>SP.Data.CoursesListItem</d:ListItemEntityTypeFullName>
+      <d:MajorVersionLimit m:type="Edm.Int32">0</d:MajorVersionLimit>
+      <d:MajorWithMinorVersionsLimit m:type="Edm.Int32">0</d:MajorWithMinorVersionsLimit>
+      <d:MultipleDataList m:type="Edm.Boolean">false</d:MultipleDataList>
+      <d:NoCrawl m:type="Edm.Boolean">false</d:NoCrawl>
+      <d:ParentWebUrl>/sites/codev/vle2</d:ParentWebUrl>
+      <d:ParserDisabled m:type="Edm.Boolean">false</d:ParserDisabled>
+      <d:ServerTemplateCanCreateFolders m:type="Edm.Boolean">true</d:ServerTemplateCanCreateFolders>
+      <d:TemplateFeatureId m:type="Edm.Guid">e2369903-30da-4357-b8e8-f6084bf3535f</d:TemplateFeatureId>
+      <d:Title>Courses</d:Title>
+    </m:properties>
+  </content>
+</entry>

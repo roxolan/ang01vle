@@ -18,8 +18,11 @@
       saveLearningGroup: saveLearningGroup,
       deleteLearningGroup: deleteLearningGroup,
       // course members
-      getCoursesPartials: getCoursesPartials
-      /// 
+      getCoursePartials: getCoursePartials,
+      getCourse: getCourse,
+      createCourse: createCourse,
+      saveCourse: saveCourse,
+      deleteCourse: deleteCourse
     }
 
     function init() {
@@ -90,7 +93,7 @@
             get: {
               method: 'GET',
               params: {
-                '$select': 'Id,Title,LearningGroup/Id,DetailLink,Description,Created,Modified',
+                '$select': 'Id,Title,LearningGroup/Id,Created,Modified,OData__Comments',
                 '$expand': 'LearningGroup/Id'
               },
               headers: {
@@ -104,7 +107,7 @@
                 'Content-Type': 'application/json;odata=verbose;',
                 'X-RequestDigest': spContext.securityValidation,
                 'X-HTTP-Method': 'MERGE',
-                'If-Match': currentItem.__metadata.etag
+                'If-Match': currentCourse.__metadata.etag
               }
             },
             delete: {
@@ -143,7 +146,7 @@
               get: {
                 method: 'GET',
                 params: {
-                  '$select': 'LearningGroup/Id,Id,Title,DetailLink,Description,Created,Modified',
+                  '$select': 'LearningGroup/Id,Id,Title,Created,Modified,OData__Comments',
                   '$expand': 'LearningGroup/Id',
                   '$filter': 'LearningGroup/Id eq ' + learningGroupIdFilter
                 },
@@ -249,7 +252,8 @@
       return deferred.promise;
     }
 
-    function getCoursesPartials(learningGroupIdFilter) {
+    // retrieve all learning paths, using ngHttp service
+    function getCoursePartials(learningGroupIdFilter) {
       // get resource
       var resource = getCourseResource(null, learningGroupIdFilter);
 
@@ -265,5 +269,68 @@
       return deferred.promise;
     }
 
+    // gets a specific course
+    function getCourse(id) {
+      var cs = new vle.models.course();
+      cs.Id = id;
+
+      // get resource
+      var resource = getCourseResource(cs);
+
+      var deferred = $q.defer();
+      resource.get({}, function (data) {
+        deferred.resolve(data.d);
+        common.logger.log("retrieved course", data, serviceId);
+      }, function (error) {
+        deferred.reject(error);
+        common.logger.logError("retrieve course", error, serviceId);
+      });
+
+      return deferred.promise;
+    }
+
+    function createCourse() {
+      return new vle.models.course();
+    }
+
+    function saveCourse(course) {
+      // get resource
+      var resource = getCourseResource(course);
+
+      // create save object
+      var saveCourse = new vle.models.course();
+      saveCourse.Title = course.Title;
+      saveCourse.LearningGroupId = course.LearningGroup.Id;
+      saveCourse.OData__Comments = course.OData__Comments;
+
+      var deferred = $q.defer();
+
+      resource.post(saveCourse, function (data) {
+        deferred.resolve(data);
+        common.logger.log("save course", data, serviceId);
+      }, function (error) {
+        deferred.reject(error);
+        common.logger.logError("Save course", error, serviceId);
+      });
+
+      return deferred.promise;
+    }
+
+    function deleteCourse(course) {
+      // get resource
+      var resource = getCourseResource(course);
+
+      var deferred = $q.defer();
+
+      resource.delete(course, function (data) {
+        deferred.resolve(data);
+        common.logger.log("delete course", data, serviceId);
+      }, function (error) {
+        deferred.reject(error);
+        common.logger.logError("delete course", error, serviceId);
+      });
+
+      return deferred.promise;
+    }
   }
 })();

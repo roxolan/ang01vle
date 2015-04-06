@@ -34,5 +34,9 @@
     <File Path="App\models\course.js" Url="App/models/course.js" ReplaceContent="TRUE" />
     <File Path="App\services\datacontext.angular.js" Url="App/services/datacontext.angular.js" ReplaceContent="TRUE" />
     <File Path="App\config.angular.http.js" Url="App/config.angular.http.js" ReplaceContent="TRUE" />
+    <File Path="analysis\XMLFile1.xml" Url="analysis/XMLFile1.xml" ReplaceContent="TRUE" />
+    <File Path="analysis\XMLFile2.xml" Url="analysis/XMLFile2.xml" ReplaceContent="TRUE" />
+    <File Path="analysis\XMLFile3.xml" Url="analysis/XMLFile3.xml" ReplaceContent="TRUE" />
+    <File Path="analysis\XMLFile4.xml" Url="analysis/XMLFile4.xml" ReplaceContent="TRUE" />
   </Module>
 </Elements>

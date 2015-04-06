@@ -51,7 +51,7 @@
           if not specified, this comes back as NaN which is dealt with in the datacontext   */
       var learningGroupId = +$routeParams.learningGroupId;
 
-      datacontext.getCoursesPartials(learningGroupId)
+      datacontext.getCoursePartials(learningGroupId)
         .then(function (data) {
           if (data) {
             vm.courses = data;

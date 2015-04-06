@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entry xml:base="https://kmbsua-90d9db8dca5267.sharepoint.com/sites/dev/vle/_api/" xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml" m:etag="&quot;1&quot;">
+  <id>a3e14589-dbf2-4e31-b98b-d12417f2d9a5</id>
+  <category term="SP.Data.CoursesListItem" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+  <link rel="edit" href="Web/Lists(guid'59f9754f-f1ef-4f8b-8955-d1cab2edb49b')/Items(2)" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/LearningGroup" type="application/atom+xml;type=entry" title="LearningGroup" href="Web/Lists(guid'59f9754f-f1ef-4f8b-8955-d1cab2edb49b')/Items(2)/LearningGroup">
+    <m:inline>
+      <entry>
+        <id>f8f5f60e-33f7-489f-8631-2899d05b53d8</id>
+        <category term="SP.Data.LearningGroupsListItem" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <title />
+        <updated>2015-04-04T04:16:23Z</updated>
+        <author>
+          <name />
+        </author>
+        <content type="application/xml">
+          <m:properties>
+            <d:Id m:type="Edm.Int32">1</d:Id>
+          </m:properties>
+        </content>
+      </entry>
+    </m:inline>
+  </link>
+  <title />
+  <updated>2015-04-04T04:16:23Z</updated>
+  <author>
+    <name />
+  </author>
+  <content type="application/xml">
+    <m:properties>
+      <d:Id m:type="Edm.Int32">2</d:Id>
+      <d:Title>Філософія бізнесу</d:Title>
+      <d:ID m:type="Edm.Int32">2</d:ID>
+      <d:Modified m:type="Edm.DateTime">2015-04-03T04:35:21Z</d:Modified>
+      <d:Created m:type="Edm.DateTime">2015-04-03T04:35:21Z</d:Created>
+    </m:properties>
+  </content>
+</entry>

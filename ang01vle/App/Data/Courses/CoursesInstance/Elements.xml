@@ -6,25 +6,21 @@
         <Row>
           <Field Name="Title">Стратегічна ідея</Field>
           <Field Name="LearningGroup">1;#PMBA11</Field>
-          <Field Name="DetailLink">http://www.andrewconnell.com/blog/SP2013-What-you-need-to-know</Field>
           <Field Name="_Comments"></Field>
         </Row>
         <Row>
           <Field Name="Title">Філософія бізнесу</Field>
           <Field Name="LearningGroup">1;#PMBA11</Field>
-          <Field Name="DetailLink">http://www.andrewconnell.com/blog/SP2013-What-you-need-to-know</Field>
           <Field Name="_Comments"></Field>
         </Row>
         <Row>
           <Field Name="Title">Маркетинг</Field>
           <Field Name="LearningGroup">1;#PMBA11</Field>
-          <Field Name="DetailLink">http://www.andrewconnell.com/blog/SP2013-What-you-need-to-know</Field>
           <Field Name="_Comments"></Field>
         </Row>
         <Row>
           <Field Name="Title">Бізнес-комунікації</Field>
           <Field Name="LearningGroup">1;#PMBA11</Field>
-          <Field Name="DetailLink">http://www.andrewconnell.com/blog/SP2013-What-you-need-to-know</Field>
           <Field Name="_Comments"></Field>
         </Row>
       </Rows>

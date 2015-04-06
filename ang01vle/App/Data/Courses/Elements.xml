@@ -9,6 +9,6 @@
         SecurityBits="11"
         Sequence="410"
         DisplayName="Courses"
-        Description="My List Definition"
+        Description="My Courses List"
         Image="/_layouts/15/images/itgen.png"/>
 </Elements>

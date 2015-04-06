@@ -26,11 +26,8 @@
       // if an ID is passed in, load the item
       var learningGroupId = +$routeParams.id;
       if (learningGroupId && learningGroupId > 0) {
-
-        getItemDetail(learningGroupId);
-          // some future version:
-          // getItem(learningPathId);
-        } else {
+        getItem(learningGroupId);
+      } else {
           createItem();
         }
 
@@ -89,7 +86,7 @@
     }
 
     // load the item specified in the route
-    function getItemDetail(learningGroupId) {
+    function getItem(learningGroupId) {
       datacontext.getLearningGroup(learningGroupId)
         .then(function (data) {
           vm.learningGroup = data;

@@ -3,7 +3,7 @@
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="vle"
      ProductID="{41064789-892b-47fb-a0d5-9b0b6f789787}"
-     Version="1.0.0.4"
+     Version="1.0.0.8"
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>
