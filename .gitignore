@@ -166,5 +166,5 @@ $RECYCLE.BIN/
 # =============================================================
 # My own additions, to cover various projects in subdirectories
 # =============================================================
+# I should never allow ignoring *.csproj - otherwise the project can be simply lost!
 
-*.csproj
