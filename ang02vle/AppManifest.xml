@@ -8,7 +8,7 @@
 >
   <Properties>
     <Title>ang02vle</Title>
-    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <StartPage>~appWebUrl/appLauncher.html?{StandardTokens}&amp;SPHostTitle={HostTitle}&amp;SPHostLogoUrl={HostLogoUrl}</StartPage>
   </Properties>
 
   <AppPrincipal>

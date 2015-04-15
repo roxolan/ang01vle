@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1630e8d3-5e1d-45eb-88d8-ddeef0f7e637" description="SharePoint App Feature" featureId="1630e8d3-5e1d-45eb-88d8-ddeef0f7e637" imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="ang01vle Feature1" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
   <projectItems>
     <projectItemReference itemId="41064789-892b-47fb-a0d5-9b0b6f789787" />

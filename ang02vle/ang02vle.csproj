@@ -43,22 +43,122 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="App\Data\Courses\CoursesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0aac6bf-4273-4f84-acfe-059bfd2edcc6}</SharePointProjectItemId>
+    </None>
+    <None Include="App\Data\Courses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4f91906f-8c35-42d6-ab59-61efca1eee89}</SharePointProjectItemId>
+    </None>
+    <None Include="App\Data\LearningGroups\LearningGroupsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{57842d03-6897-4485-b30a-1f489a53a205}</SharePointProjectItemId>
+    </None>
+    <None Include="App\Data\LearningGroups\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77185103-3fe9-4dd2-bbf8-d210eae394c2}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{43a62a26-9b0b-40f9-8494-064b9d4e09d9}</FeatureId>
+    </None>
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fefd1f78-66eb-4aea-b489-218bd2404c0e}</SharePointProjectItemId>
     </None>
+    <Content Include="App\app.js" />
+    <Content Include="App\appLauncher.js" />
+    <Content Include="App\common\common.js" />
+    <Content Include="App\common\logger.js" />
+    <Content Include="App\config.angular.http.js" />
+    <Content Include="App\config.exceptionHandler.js" />
+    <Content Include="App\config.js" />
+    <Content Include="App\config.route.js" />
+    <Content Include="App\course\courseDetail.html" />
+    <Content Include="App\course\courseDetail.js" />
+    <Content Include="App\course\courses.html" />
+    <Content Include="App\course\courses.js" />
+    <Content Include="App\dashboard\dashboard.html" />
+    <Content Include="App\dashboard\dashboard.js" />
+    <Content Include="App\Data\Courses\CoursesInstance\Elements.xml" />
+    <Content Include="App\Data\Courses\Elements.xml" />
+    <Content Include="App\Data\Courses\Schema.xml" />
+    <Content Include="App\Data\LearningGroups\Elements.xml" />
+    <Content Include="App\Data\LearningGroups\LearningGroupsInstance\Elements.xml" />
+    <Content Include="App\Data\LearningGroups\Schema.xml" />
+    <Content Include="App\layout\header.html" />
+    <Content Include="App\layout\header.js" />
+    <Content Include="App\layout\quicklaunch.html" />
+    <Content Include="App\layout\quicklaunch.js" />
+    <Content Include="App\layout\shell.html" />
+    <Content Include="App\layout\shell.js" />
+    <Content Include="App\layout\spAppChrome.html" />
+    <Content Include="App\layout\spAppChrome.js" />
+    <Content Include="App\layout\workingonit.html" />
+    <Content Include="App\layout\workingonit.js" />
+    <Content Include="App\learningGroup\learningGroupDetail.html" />
+    <Content Include="App\learningGroup\learningGroupDetail.js" />
+    <Content Include="App\learningGroup\learningGroups.html" />
+    <Content Include="App\learningGroup\learningGroups.js" />
+    <Content Include="App\models\course.js" />
+    <Content Include="App\models\learningGroup.js" />
+    <Content Include="App\services\datacontext.angular.js" />
+    <Content Include="App\services\spContext.js" />
+    <Content Include="App\util\jquery-extensions.js" />
+    <Content Include="Content\breeze.directives.css" />
+    <Content Include="Elements.xml" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\error.png" />
+    <Content Include="Images\info.png" />
+    <Content Include="Images\success.png" />
+    <Content Include="Images\warning.png" />
+    <Content Include="Pages\app.html" />
+    <Content Include="Pages\appLauncher.html" />
     <Content Include="Pages\Elements.xml" />
-    <Content Include="Pages\Default.aspx" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22979868-2954-4704-84de-e3f51c5d06df}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Scripts\angular-animate.min.js.map" />
+    <None Include="Scripts\angular-cookies.min.js.map" />
+    <None Include="Scripts\angular-resource.min.js.map" />
+    <None Include="Scripts\angular-route.min.js.map" />
+    <None Include="Scripts\angular-sanitize.min.js.map" />
+    <None Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5e510240-89b7-44b1-8376-d55308a8b5e7}</SharePointProjectItemId>
     </None>
-    <Content Include="Scripts\Elements.xml" />
-    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-animate.min.js" />
+    <Content Include="Scripts\angular-cookies.js" />
+    <Content Include="Scripts\angular-cookies.min.js" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-resource.js" />
+    <Content Include="Scripts\angular-resource.min.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular-sanitize.js" />
+    <Content Include="Scripts\angular-sanitize.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\breeze.bridge.angular.js" />
+    <Content Include="Scripts\breeze.debug.js" />
+    <Content Include="Scripts\breeze.directives.js" />
+    <Content Include="Scripts\breeze.labs.dataservice.abstractrest.js" />
+    <Content Include="Scripts\breeze.labs.dataservice.sharepoint.js" />
+    <Content Include="Scripts\breeze.metadata-helper.js" />
+    <Content Include="Scripts\breeze.min.js" />
+    <Content Include="Scripts\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\q.js" />
+    <Content Include="Scripts\q.min.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +189,7 @@
     </None>
     <None Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +197,7 @@
       <SubType>Designer</SubType>
     </AppManifestFile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
