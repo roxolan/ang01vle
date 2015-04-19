@@ -9,12 +9,17 @@
       'ngResource',   // assists with rest calls
       'ngCookies',   // cookie read/write support
       'ngAnimate',
+
+      // 3rd party libraries
+      'breeze.angular',
+      'breeze.directives',
+
       // custom modules
       'common'
     ]);
 
     // wire up routing for errors & success events
-    app.run(['$route', 'angular.config', function ($route, angularConfig) {
+    app.run(['$route', function ($route) {
         // run any code that needs to execute prior to the app actually starting up
     }]);
 })();

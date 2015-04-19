@@ -35,5 +35,8 @@
     <ProjectItemFile Source="App\services\datacontext.angular.js" Target="App\services\" Type="ElementFile" />
     <ProjectItemFile Source="App\services\spContext.js" Target="App\services\" Type="ElementFile" />
     <ProjectItemFile Source="App\util\jquery-extensions.js" Target="App\util\" Type="ElementFile" />
+    <ProjectItemFile Source="App\services\datacontext.breeze.js" Target="App\services\" Type="ElementFile" />
+    <ProjectItemFile Source="App\config.breeze.js" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="App\models\breeze.entities.js" Target="App\models\" Type="ElementFile" />
   </Files>
 </ProjectItem>

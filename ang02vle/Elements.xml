@@ -34,5 +34,8 @@
     <File Path="App\models\course.js" Url="App/models/course.js" ReplaceContent="TRUE" />
     <File Path="App\services\datacontext.angular.js" Url="App/services/datacontext.angular.js" ReplaceContent="TRUE" />
     <File Path="App\config.angular.http.js" Url="App/config.angular.http.js" ReplaceContent="TRUE" />
+    <File Path="App\services\datacontext.breeze.js" Url="App/services/datacontext.breeze.js" ReplaceContent="TRUE" />
+    <File Path="App\config.breeze.js" Url="App/config.breeze.js" ReplaceContent="TRUE" />
+    <File Path="App\models\breeze.entities.js" Url="App/models/breeze.entities.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
