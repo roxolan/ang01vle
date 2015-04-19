@@ -58,6 +58,7 @@
     <None Include="Features\Feature2\Feature2.feature">
       <FeatureId>{43a62a26-9b0b-40f9-8494-064b9d4e09d9}</FeatureId>
     </None>
+    <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fefd1f78-66eb-4aea-b489-218bd2404c0e}</SharePointProjectItemId>
     </None>

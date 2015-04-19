@@ -36,5 +36,7 @@
     <File Path="Scripts\moment-with-locales.js" Url="Scripts/moment-with-locales.js" ReplaceContent="TRUE" />
     <File Path="Scripts\moment-with-locales.min.js" Url="Scripts/moment-with-locales.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\q.js" Url="Scripts/q.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\q.min.js" Url="Scripts/q.min.js" ReplaceContent="TRUE" />
+
   </Module>
 </Elements>
