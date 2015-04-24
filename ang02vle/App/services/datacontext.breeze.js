@@ -4,16 +4,18 @@
   // define factory
   var serviceId = 'datacontext';
   angular.module('app').factory(serviceId,
-    ['$q', 'common', datacontext]);
+    ['$q', 'common', 'breeze.config', 'breeze.entities', datacontext]);
 
-  function datacontext($q, common) {
+  function datacontext($q, common, breezeConfig, breezeEntities) {
+    var metadataStore, courseType, learningGroupType;
+    var manager;
 
     init()
 
     // service public signature
     return {
       // learning group members:
-      getLearningGroupsPartials: getLearningGroupsPartials,
+      getLearningGroups: getLearningGroups,
       getLearningGroup: getLearningGroup,
       createLearningGroup: createLearningGroup,
       saveLearningGroup: saveLearningGroup,
@@ -27,10 +29,31 @@
     }
 
     function init() {
+      // get reference to the breeze metadata store
+      metadataStore = breezeEntities.metadataStore;
+
+      // get references to the entity types
+      courseType = metadataStore.getEntityType('Course');
+      learningGroupType = metadataStore.getEntityType('LearningGroup');
+
+      // define instance of the entity manager, used to issue all queries
+      manager = new breeze.EntityManager({
+        dataService: breezeConfig.dataservice,
+        metadataStore: metadataStore
+      });
+
       common.logger.log("service loaded", null, serviceId);
     }
 
-    function getLearningGroupsPartials() {
+    // retrieve all learning groups
+    function getLearningGroups() {
+      return breeze.EntityQuery
+      .from(learningGroupType.defaultResourceName)
+      .using(manager)
+      .execute()
+      .then(function (data) {
+        return data.results;
+      });
     }
 
     // gets a specific learning group

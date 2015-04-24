@@ -45,7 +45,7 @@
 
       // create the entity metadata and add to the store
       addLearningGroupType();
-      addLearningItemType();
+      addCourseType();
 
       // add 'defaultSelect' custom metadata that selects for all mapped data properties
       // could be used by SharePoint dataservice adapter to exclude unwanted property data
@@ -95,13 +95,8 @@
           dataProperties: {
             Id: { type: breeze.DataType.Int32 },
             Title: { nullable: false },
-            ItemType: { nullable: false },
             OData__Comments: {},
-            Url: {
-              nullable: false,
-              validators: [breeze.Validator.url()]
-            },
-            LearningPathId: {
+            LearningGroupId: {
               type: breeze.DataType.Int32,
               nullable: false
             },
@@ -109,7 +104,7 @@
             Modified: { type: breeze.DataType.DateTime }
           },
           navigationProperties: {
-            LearningPath: 'LearningPath'
+            LearningGroup: 'LearningGroup'
           }
         });
       }

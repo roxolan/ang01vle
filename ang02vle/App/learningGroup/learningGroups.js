@@ -48,7 +48,7 @@
 
     // get learning groups & set to bindable collections on vm
     function getLearningGroups() {
-      datacontext.getLearningGroupsPartials()
+      datacontext.getLearningGroups()
         .then(function (data) {
           if (data) {
               vm.learningGroups = data;
