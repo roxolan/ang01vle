@@ -12,10 +12,10 @@
     // utility method to convert universal time > local time using moment.js
     vm.created = localizedCreatedTimestamp;
     vm.modified = localizedModifiedTimestap;
-    // navigate backwards in the history stack
-    vm.goBack = goBack;
+    // handle saves & deletes
     vm.goSave = goSave;
     vm.goDelete = goDelete;
+    vm.goCancel = goCancel;
 
     // init controller
     init();
@@ -58,14 +58,16 @@
       $window.history.back();
     }
 
+    function goCancel() {
+      datacontext.revertChanges();
+      goBack();
+    }
+
     // handle save action
     function goSave() {
-      datacontext.saveLearningGroup(vm.learningGroup)
+      datacontext.saveChanges()
         .then(function () {
-          common.logger.logSuccess("Saved learning group.", null, controllerId);
-        })
-        .then(function () {
-          $location.path('/LearningGroups/');
+          goBack();
         });
     }
 

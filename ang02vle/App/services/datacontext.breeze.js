@@ -18,14 +18,17 @@
       getLearningGroups: getLearningGroups,
       getLearningGroup: getLearningGroup,
       createLearningGroup: createLearningGroup,
-      saveLearningGroup: saveLearningGroup,
       deleteLearningGroup: deleteLearningGroup,
+
       // course members
       getCoursePartials: getCoursePartials,
       getCourse: getCourse,
       createCourse: createCourse,
-      saveCourse: saveCourse,
-      deleteCourse: deleteCourse
+      deleteCourse: deleteCourse,
+
+      // shared
+      saveChanges: saveChanges,
+      revertChanges: revertChanges
     }
 
     function init() {
@@ -58,13 +61,16 @@
 
     // gets a specific learning group
     function getLearningGroup(id) {
+      // first try to get the data from the local cache, but if not present, grab from server
+      return manager.fetchEntityByKey('LearningGroup', id, true)
+      .then(function (data) {
+        common.logger.log('fetched learning group from ' + (data.fromCache ? 'cache' : 'server'), data);
+        return data.entity;
+      });
     }
 
     // creates a new learning group
     function createLearningGroup() {
-    }
-
-    function saveLearningGroup(learningGroup) {
     }
 
     function deleteLearningGroup(learningGroup) {
@@ -81,10 +87,30 @@
     function createCourse() {
     }
 
-    function saveCourse(course) {
-    }
-
     function deleteCourse(course) {
     }
+
+    // saves all changes
+    function saveChanges() {
+      // save changes
+      return manager.saveChanges()
+        .then(function (result) {
+          if (result.entities.length == 0) {
+            common.logger.logWarning('Nothing saved.');
+          } else {
+            common.logger.logSuccess('Saved changes.');
+          }
+        })
+        .catch(function (error) {
+          $q.reject(error);
+          common.logger.logError('Error saving changes', error, serviceId);
+        });
+    }
+
+    // reverts all changes back to their original state
+    function revertChanges() {
+      return manager.rejectChanges();
+    }
+
   }
 })();
