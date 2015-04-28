@@ -94,7 +94,7 @@
     function saveChanges() {
       // save changes
       return manager.saveChanges()
-        .then(function (result) {
+        .then(function(result) {
           if (result.entities.length == 0) {
             common.logger.logWarning('Nothing saved.');
           } else {

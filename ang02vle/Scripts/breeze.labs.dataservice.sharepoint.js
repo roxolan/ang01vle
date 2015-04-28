@@ -290,6 +290,8 @@
           result.node = node.results;
         }
       }
+      result.extraMetadata = node.__metadata;
+      // ----> roxolan: added manually metadata
       return result;
     }
 
@@ -315,6 +317,7 @@
         // ASSUME if #-of-properties on node is >= #-of-props for the type
         // that this is the full entity and not a partial projection.
         // Therefore we declare that we've received an entity
+        // ---> roxolan:: replaced the following line
         if (entityType._mappedPropertiesCount <= Object.keys(node).length - 1) {
           result.entityType = entityType;
           result.extraMetadata = metadata;

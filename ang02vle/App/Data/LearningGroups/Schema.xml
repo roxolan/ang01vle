@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="Навчальні групи" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/LearningGroups" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="LearningGroups" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/LearningGroups" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
       

@@ -70,10 +70,10 @@
       function addLearningGroupType() {
         addType({
           name: 'LearningGroup',
-          defaultResourceName: 'getbytitle(\'Навчальні групи\')/items',
+          defaultResourceName: 'getbytitle(\'LearningGroups\')/items',
           dataProperties: {
             Id: { type: breeze.DataType.Int32 },
-            Title: { nullable: false },
+            Title: {},
             OData__Comments: {},
             Created: { type: breeze.DataType.DateTime },
             Modified: { type: breeze.DataType.DateTime }

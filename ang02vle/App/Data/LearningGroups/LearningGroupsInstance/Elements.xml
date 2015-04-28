@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Навчальні групи" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/LearningGroups" Description="Дані для навчальних груп">
+  <ListInstance Title="LearningGroups" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/LearningGroups" Description="Дані для навчальних груп">
     <Data>
       <Rows>
         <Row>
