@@ -74,6 +74,11 @@
     }
 
     function deleteLearningGroup(learningGroup) {
+      // could possibly have this also delete the children items related to this
+      //  but you need to consider what happens with the local cache... if 
+      //  sharepoint automatically deletes the children, your biz logic should handle it
+      learningGroup.entityAspect.setDeleted();
+      return saveChanges();
     }
 
     // retrieve all learning paths, using ngHttp service

@@ -29,7 +29,7 @@
     <ProjectItemFile Source="breeze.debug.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="breeze.directives.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="breeze.labs.dataservice.abstractrest.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="breeze.labs.dataservice.sharepoint.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="breeze.labs.dataservice.sharepoint-tweaked.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="breeze.metadata-helper.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="breeze.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="moment.js" Target="Scripts\" Type="ElementFile" />
