@@ -4,6 +4,7 @@
      Name="vle"
      ProductID="{fefd1f78-66eb-4aea-b489-218bd2404c0e}"
      Version="1.0.2.3"
+
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>

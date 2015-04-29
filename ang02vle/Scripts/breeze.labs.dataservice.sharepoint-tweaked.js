@@ -291,6 +291,7 @@
         }
       }
       result.extraMetadata = node.__metadata;
+      // TWEAK
       // ----> roxolan: added manually metadata
       return result;
     }

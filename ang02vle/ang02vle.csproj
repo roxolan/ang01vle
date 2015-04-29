@@ -148,7 +148,7 @@
     <Content Include="Scripts\breeze.debug.js" />
     <Content Include="Scripts\breeze.directives.js" />
     <Content Include="Scripts\breeze.labs.dataservice.abstractrest.js" />
-    <Content Include="Scripts\breeze.labs.dataservice.sharepoint.js" />
+    <Content Include="Scripts\breeze.labs.dataservice.sharepoint-tweaked.js" />
     <Content Include="Scripts\breeze.metadata-helper.js" />
     <Content Include="Scripts\breeze.min.js" />
     <Content Include="Scripts\Elements.xml">

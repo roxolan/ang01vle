@@ -28,7 +28,7 @@
     <File Path="Scripts\breeze.debug.js" Url="Scripts/breeze.debug.js" ReplaceContent="TRUE" />
     <File Path="Scripts\breeze.directives.js" Url="Scripts/breeze.directives.js" ReplaceContent="TRUE" />
     <File Path="Scripts\breeze.labs.dataservice.abstractrest.js" Url="Scripts/breeze.labs.dataservice.abstractrest.js" ReplaceContent="TRUE" />
-    <File Path="Scripts\breeze.labs.dataservice.sharepoint.js" Url="Scripts/breeze.labs.dataservice.sharepoint.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\breeze.labs.dataservice.sharepoint-tweaked.js" Url="Scripts/breeze.labs.dataservice.sharepoint-tweaked.js" ReplaceContent="TRUE" />
     <File Path="Scripts\breeze.metadata-helper.js" Url="Scripts/breeze.metadata-helper.js" ReplaceContent="TRUE" />
     <File Path="Scripts\breeze.min.js" Url="Scripts/breeze.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\moment.js" Url="Scripts/moment.js" ReplaceContent="TRUE" />
