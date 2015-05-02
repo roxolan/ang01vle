@@ -69,7 +69,7 @@
       // add the learning path type to the metadata store
       function addLearningGroupType() {
         addType({
-          name: 'LearningGroup',
+          name: 'LearningGroups',
           defaultResourceName: 'getbytitle(\'LearningGroups\')/items',
           dataProperties: {
             Id: { type: breeze.DataType.Int32 },
@@ -104,7 +104,7 @@
             Modified: { type: breeze.DataType.DateTime }
           },
           navigationProperties: {
-            LearningGroup: 'LearningGroup'
+            LearningGroups: 'LearningGroups'
           }
         });
       }

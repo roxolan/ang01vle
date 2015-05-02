@@ -37,7 +37,7 @@
 
       // get references to the entity types
       courseType = metadataStore.getEntityType('Course');
-      learningGroupType = metadataStore.getEntityType('LearningGroup');
+      learningGroupType = metadataStore.getEntityType('LearningGroups');
 
       // define instance of the entity manager, used to issue all queries
       manager = new breeze.EntityManager({
@@ -62,7 +62,7 @@
     // gets a specific learning group
     function getLearningGroup(id) {
       // first try to get the data from the local cache, but if not present, grab from server
-      return manager.fetchEntityByKey('LearningGroup', id, true)
+      return manager.fetchEntityByKey('LearningGroups', id, true)
       .then(function (data) {
         common.logger.log('fetched learning group from ' + (data.fromCache ? 'cache' : 'server'), data);
         return data.entity;
