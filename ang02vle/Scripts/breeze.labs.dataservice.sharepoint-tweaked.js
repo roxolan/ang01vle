@@ -119,7 +119,7 @@
   }
 
   function clientTypeNameToServerDefault(clientTypeName) {
-    return 'SP.Data.' + clientTypeName + 'sListItem';
+    return 'SP.Data.' + clientTypeName + 'ListItem';
   }
 
   function clientTypeNameToServer2010Default(clientTypeName) {
