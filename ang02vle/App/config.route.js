@@ -59,7 +59,7 @@
           }
       },
       {
-        url: '/LearningGroups/:LearningGroupId/Courses',
+        url: '/LearningGroups/:learningGroupId/Courses',
         config: {
           templateUrl: 'App/course/courses.html',
           title: 'learning group - courses',

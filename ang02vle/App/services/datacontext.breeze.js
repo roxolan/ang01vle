@@ -21,7 +21,8 @@
       deleteLearningGroup: deleteLearningGroup,
 
       // course members
-      getCoursePartials: getCoursePartials,
+      getCourses: getCourses,
+      getCoursesForLearningGroup: getCoursesForLearningGroup,
       getCourse: getCourse,
       createCourse: createCourse,
       deleteCourse: deleteCourse,
@@ -70,7 +71,8 @@
     }
 
     // creates a new learning group
-    function createLearningGroup() {
+    function createLearningGroup(initialValues) {
+      return manager.createEntity(learningGroupType, initialValues);
     }
 
     function deleteLearningGroup(learningGroup) {
@@ -81,12 +83,50 @@
       return saveChanges();
     }
 
-    // retrieve all learning paths, using ngHttp service
-    function getCoursePartials(learningGroupIdFilter) {
+    // retrieve all learning groups, using ngHttp service
+    function getCourses() {
+      return breeze.EntityQuery
+      .from(courseType.defaultResourceName)
+      .using(manager)
+      .execute()
+      .then(function(data){
+        return data.results;
+      })
+    }
+
+    // retrieve courses for a specific learning group
+    function getCoursesForLearningGroup(learningGroupId) {
+      // get learning group (hopefully from cache)...
+      return getLearningGroup(learningGroupId)
+        .then(function () {
+          // query that always works
+          console.log("MON courseType.custom: " + courseType.custom);
+          var query = breeze.EntityQuery
+             .from(courseType.defaultResourceName)
+             // .where('LearningGroup.Id', 'eq', learningGroupId)
+             // .select(courseType.custom.defaultSelect + ',LearningGroup.Id')
+             // .expand('LearningGroup');
+          // query that works in Office365 / SPO and versions of SharePoint 2013
+          // that have XXX 201X applied (this CU includes a bugfix)
+          // var query = breeze.EntityQuery
+          // .from(courseType.defaultResourceName)
+              .where('LearningGroupId', 'eq', learningGroupId);
+
+          return manager.executeQuery(query)
+            .then(function (data) {
+              return data.results;
+            });
+        });
     }
 
     // gets a specific course
     function getCourse(id) {
+      // first try to get the data from the local cache, but if not present, grab from server
+      return manager.fetchEntityByKey('Course', id, true)
+        .then(function (data) {
+          common.logger.log('fetched course from ' + (data.fromCache ? 'cache' : 'server'), data);
+          return data.entity;
+        });
     }
 
     function createCourse() {
@@ -112,7 +152,8 @@
         });
     }
 
-    // reverts all changes back to their original state
+    // reverts all changes back to their original state 
+    // (basically telling breeze to ignore changes that we just did
     function revertChanges() {
       return manager.rejectChanges();
     }
