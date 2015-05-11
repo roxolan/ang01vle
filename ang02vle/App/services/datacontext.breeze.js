@@ -103,15 +103,13 @@
           console.log("MON courseType.custom: " + courseType.custom);
           var query = breeze.EntityQuery
              .from(courseType.defaultResourceName)
-             // .where('LearningGroup.Id', 'eq', learningGroupId)
-             // .select(courseType.custom.defaultSelect + ',LearningGroup.Id')
-             // .expand('LearningGroup');
-          // query that works in Office365 / SPO and versions of SharePoint 2013
-          // that have XXX 201X applied (this CU includes a bugfix)
-          // var query = breeze.EntityQuery
-          // .from(courseType.defaultResourceName)
+              // query that works in Office365 / SPO and versions of SharePoint 2013
+              // that have XXX 201X applied (this CU includes a bugfix)
               .where('LearningGroupId', 'eq', learningGroupId);
-
+              /* In case it did not work aconnell has a hack (described in #5.12): */
+              // .where('LearningGroup.Id', 'eq', learningGroupId)
+              // .select(courseType.custom.defaultSelect + ',LearningGroup.Id')
+              // .expand('LearningGroup');
           return manager.executeQuery(query)
             .then(function (data) {
               return data.results;
