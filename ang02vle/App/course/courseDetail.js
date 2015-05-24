@@ -24,15 +24,15 @@
 
     function init() {
       // load the learning group selectors
-      getLearningGroupsSelectors();
-
-      // if an ID is passed in, load the item
-      var courseId = +$routeParams.id;
-      if (courseId && courseId > 0) {
-        getCourse(courseId);
-      } else {
-        createCourse();
-      }
+      getLearningGroupsSelectors().then(function () {
+        // if an ID is passed in, load the course
+        var courseId = +$routeParams.id;
+        if (courseId && courseId > 0) {
+          getCourse(courseId);
+        } else {
+          createCourse
+        }
+      });
 
       common.logger.log("controller loaded", null, controllerId);
       common.activateController([], controllerId);
@@ -63,13 +63,10 @@
 
     // handle save action
     function goSave() {
-      datacontext.saveCourse(vm.course)
-        .then(function () {
-          common.logger.logSuccess("Saved course", null, controllerId);
-        })
-        .then(function () {
-          goBack();
-        });
+      return datacontext.saveChanges()
+      .then(function () {
+        goBack();
+      });
     }
 
     // handle delete action
@@ -85,7 +82,7 @@
 
     // load all learning groups
     function getLearningGroupsSelectors() {
-      datacontext.getLearningGroupsPartials()
+      return datacontext.getLearningGroups()
         .then(function (data) {
           vm.learningGroups = data;
         });

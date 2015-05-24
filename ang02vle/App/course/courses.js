@@ -51,16 +51,23 @@
           if not specified, this comes back as NaN which is dealt with in the datacontext   */
       var learningGroupId = +$routeParams.learningGroupId;
 
-      datacontext.getCoursePartials(learningGroupId)
-        .then(function (data) {
-          if (data) {
-            vm.courses = data;
-          } else {
-            throw new Error('error obtaining data');
-          }
-        }).catch(function (error) {
-          common.logger.logError('error obtaining courses', error, controllerId);
-        });
+      var promise;
+
+      if (learningGroupId) {
+        promise = datacontext.getCoursesForLearningGroup(learningGroupId);
+      } else {
+        promise = datacontext.getCourses();
+      }
+
+      promise.then(function (data) {
+        if (data) {
+          vm.courses = data;
+        } else {
+          throw new Error('error obtaining data');
+        }
+      }).catch(function (error) {
+        common.logger.logError('error obtaining courses', error, controllerId);
+      });
     }        
   };
 

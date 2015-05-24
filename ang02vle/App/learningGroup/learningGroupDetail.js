@@ -58,6 +58,7 @@
       $window.history.back();
     }
 
+    // handle cancel action
     function goCancel() {
       datacontext.revertChanges();
       goBack();
